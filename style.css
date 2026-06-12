@@ -1,0 +1,236 @@
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+.home{
+     background: linear-gradient(rgba(0,0,0,0.6),
+              rgba(0,0,0,0.6)),
+              url('./images/background.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+.explore{
+  height:100vh;
+  background-color: darkgrey;
+  padding: 10px;
+}
+#explore h1{
+  margin-top: 90px;
+  font-weight: bolder;
+}
+#explore h6{
+  margin-top: 10px;
+}
+.navbar{
+  height: 100px
+}
+    .card img {
+  height: 250px;
+  object-fit: cover;
+}
+.home h2{
+    text-shadow: 2px 2px 5px black;
+    color: bisque;
+}
+
+ section{
+    min-height:fit-content;
+    padding: 60px 0;
+    scroll-margin-top: 90px;
+    margin-top: 10px;
+}
+.section-space{
+  padding-top: 20px;
+}
+.card-body img{
+  height: 40px;
+  object-fit: cover;
+}
+.card-body img :hover{
+  transform: scale(1.1);
+  transition: transform 0.5s ease;
+  cursor: pointer;
+}
+
+#services, #career, .technologies, #contact{
+  scroll-margin-top: 150px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.tech-container {
+  height: 200px;
+    margin: 20px;
+  
+}
+
+.tech-container img{
+  display: inline-block;
+  padding: 40px;
+  
+  border:  1px solid black;
+  object-fit: fill;
+  aspect-ratio: 2/2;
+  border-radius: 30px;
+  box-shadow: 4px 4px 8px black;
+  transition: all transform 0.3s ease;
+  height: 100%;
+  width: auto;
+}
+ 
+ 
+.tech-container img:hover{
+  transform: scale(0.8)
+}
+
+.custom-navbar{
+    background-image: url('./images/navbg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 150px;
+}
+
+.explore-container
+{
+  background-image: url('./images/explorebg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.custom-breadcrumb .breadcrumb-item + .breadcrumb-item::before {
+  color: WHITE; /* arrow/slash color */
+}
+a{
+  text-decoration: none;
+}
+
+.ourteam-container
+{
+  background-image: url('./images/explorebg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+  
+.nav-item{
+  position: relative;
+}
+
+/* Button */
+.consult-btn{
+    background:#0066ff;
+    color:#fff;
+    padding:14px 28px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:16px;
+    font-weight:600;
+}
+
+.consult-btn:hover{
+    background:#0052cc;
+}
+
+/* Modal Overlay */
+.modal{
+    display:none;
+    position:relative;
+    margin-top: 40px;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.7);
+    z-index:999;
+    justify-content:center;
+    align-items:center;
+}
+
+/* Modal Box */
+.modal-content{
+    background:#fff;
+    width:90%;
+    max-width:650px;
+    padding:30px;
+    border-radius:15px;
+    position:relative;
+    animation:fadeIn .3s ease;
+}
+
+@keyframes fadeIn{
+    from{
+        transform:translateY(-20px);
+        opacity:0;
+    }
+    to{
+        transform:translateY(0);
+        opacity:1;
+    }
+}
+
+.close{
+    position:absolute;
+    right:20px;
+    top:15px;
+    font-size:28px;
+    cursor:pointer;
+}
+
+.modal h2{
+    color:#111827;
+    margin-bottom:10px;
+}
+
+.modal p{
+    color:#6b7280;
+    margin-bottom:20px;
+}
+
+.form-group{
+  margin-top: 20px;
+  scroll-behavior: auto;
+}
+
+input,
+select,
+textarea{
+    width:100%;
+    padding:12px;
+    border:1px solid #ddd;
+    border-radius:8px;
+    font-size:14px;
+}
+
+textarea{
+    resize:vertical;
+    min-height:100px;
+}
+
+.submit-btn{
+    width:100%;
+    background:#0066ff;
+    color:white;
+    border:none;
+    padding:14px;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:16px;
+    font-weight:600;
+}
+
+.submit-btn:hover{
+    background:#0052cc;
+}
+
